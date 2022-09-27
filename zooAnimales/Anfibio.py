@@ -1,4 +1,4 @@
-from zooAnimales.Animal import Animal
+from Animal import Animal
 
 class Anfibio(Animal):
 	_listado = []
@@ -25,7 +25,7 @@ class Anfibio(Animal):
 		return Anfibio._listado
 	def setListado(cls,listado):
 		Anfibio._listado = listado
-        
+
 	@classmethod
 	def crearRana(cls,nombre,edad,genero):
 		Anfibio.ranas+=1
